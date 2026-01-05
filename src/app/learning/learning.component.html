@@ -1,0 +1,32 @@
+<!-- Interpolation {{ variable }} -->
+<h1>{{ name }}</h1>
+
+<!-- Property Binding [property]="variable" -->
+<img [src]="photo" alt="Photo">
+
+<!-- Event Binding (event)="function()" -->
+<h5>{{ myNumber }}</h5>
+<button (click)="increment()">+</button>
+<button (click)="decrement()">-</button>
+
+<!-- Two-Way Binding [(ngModel)]="variable" -->
+<input type="text" [(ngModel)]="name">
+<h5>{{ name }}</h5>
+
+<!-- Example of a component -->
+<app-example [name]="name"></app-example>
+
+<!-- Form -->
+<form #form="ngForm" (ngSubmit)="onSubmit(form)">
+  <div class="mb-3">
+    <label for="name" class="form-label">Nom</label>
+    <input type="text" required class="form-control" name="name" id="name" ngModel>
+    <small class="form-text text-muted">Entrez votre nom</small>
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" required class="form-control" name="email" id="email" ngModel>
+    <small class="form-text text-muted">Entrez votre email</small>
+  </div>
+  <button type="submit" class="btn btn-primary">Envoyer</button>
+</form>

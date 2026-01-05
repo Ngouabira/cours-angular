@@ -1,17 +1,1 @@
-<!-- Interpolation {{ variable }} -->
-<h1>{{ name }}</h1>
-
-<!-- Property Binding [property]="variable" -->
-<img [src]="photo" alt="Photo">
-
-<!-- Event Binding (event)="function()" -->
-<h5>{{ myNumber }}</h5>
-<button (click)="increment()">+</button>
-<button (click)="decrement()">-</button>
-
-<!-- Two-Way Binding [(ngModel)]="variable" -->
-<input type="text" [(ngModel)]="name">
-<h5>{{ name }}</h5>
-
-<!-- Example of a component -->
-<app-example [name]="name"></app-example>
+<router-outlet></router-outlet>
