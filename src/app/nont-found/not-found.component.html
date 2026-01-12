@@ -1,0 +1,89 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light shadow-sm py-3"
+  style="background: linear-gradient(90deg, #a18cd1 0%, #fbc2eb 100%); border-bottom-left-radius: 24px; border-bottom-right-radius: 24px;">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" href="#" style="color:#8f2bbf; font-size: 2rem;">
+      <i class="bi bi-house-door-fill me-2"></i>Dashboard
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarNav">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active fw-semibold" aria-current="page" routerLink="/home"
+            style="color:#7c19a5;">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-semibold" routerLink="/profile" style="color:#7c19a5;">Profil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-semibold" routerLink="/settings" style="color:#7c19a5;">Paramètres</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-semibold" (click)="logout()" style="color:#7c19a5; cursor: pointer;">
+            Déconnexion <i class="bi bi-box-arrow-right ms-2"></i>
+          </a>
+        </li>
+      </ul>
+      <span class="ms-3" style="font-size:1.7rem; color:#8f2bbf;">
+        <i class="bi bi-person-circle"></i>
+      </span>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" style="background: #fff4ff; min-height: calc(100vh - 85px);">
+  <div class="row" style="padding-top: 32px;">
+    <!-- Sidebar -->
+    <nav class="col-md-2 d-none d-md-block sidebar"
+      style="background:linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%); border-radius: 32px; min-height: 80vh; box-shadow: 2px 8px 16px #cfbbd8;">
+      <div class="position-sticky pt-3">
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <a class="nav-link active fw-bold" routerLink="/home" style="color:#8f2bbf;">
+              <i class="bi bi-speedometer2 me-2"></i> Tableau de bord
+            </a>
+          </li>
+
+          <li class="nav-item mb-2">
+            <a class="nav-link fw-semibold" routerLink="/users" style="color:#7c19a5;">
+              <i class="bi bi-journal-text me-2"></i> Utilisateurs
+            </a>
+          </li>
+
+          <li class="nav-item mb-2">
+            <a class="nav-link fw-semibold" routerLink="/learning" style="color:#7c19a5;">
+              <i class="bi bi-journal-text me-2"></i> Cours
+            </a>
+          </li>
+          <li class="nav-item mb-2">
+            <a class="nav-link fw-semibold" routerLink="/projects" style="color:#7c19a5;">
+              <i class="bi bi-layers me-2"></i> Projets
+            </a>
+          </li>
+          <li class="nav-item mb-2">
+            <a class="nav-link fw-semibold" routerLink="/messages" style="color:#7c19a5;">
+              <i class="bi bi-chat-left-text me-2"></i> Messages
+            </a>
+          </li>
+          <li class="nav-item mb-2">
+            <a class="nav-link fw-semibold" routerLink="/settings" style="color:#7c19a5;">
+              <i class="bi bi-gear me-2"></i> Paramètres
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Page content -->
+    <main class="col-md-10 ms-sm-auto px-md-5 px-3">
+
+      <h1>Page non trouvée</h1>
+    </main>
+  </div>
+</div>
+
+<!-- Bootstrap Icons CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
